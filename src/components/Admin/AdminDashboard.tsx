@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Edit2, Trash2, Eye, EyeOff, Users, Tv, MessageCircle, TrendingUp } from 'lucide-react';
+import { Plus, Edit2, Trash2, Eye, EyeOff, Users, Monitor, MessageCircle, TrendingUp } from 'lucide-react';
 import { Channel } from '../../types';
 import { channelAPI, userAPI } from '../../services/api';
 import { useApp } from '../../context/AppContext';
@@ -146,7 +146,7 @@ const AdminDashboard: React.FC = () => {
         <StatCard
           title="Total Channels"
           value={stats.totalChannels}
-          icon={Tv}
+          icon={Monitor}
           color="bg-blue-500"
         />
         <StatCard

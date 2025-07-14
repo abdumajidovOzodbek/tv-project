@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Tv, Settings, Users, BarChart3, X } from 'lucide-react';
+import { Home, Monitor, Settings, Users, BarChart3, X } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 interface SidebarProps {
@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, currentView, onViewC
 
   const menuItems = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'channels', label: 'Channels', icon: Tv },
+    { id: 'channels', label: 'Channels', icon: Monitor },
     ...(authState.user?.role === 'admin' ? [
       { id: 'admin', label: 'Admin Panel', icon: Settings },
       { id: 'users', label: 'Users', icon: Users },

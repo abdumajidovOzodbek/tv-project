@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, Play, Users, Star } from 'lucide-react';
+import { Search, Filter, Play, Users, Star, Monitor } from 'lucide-react';
 import { Channel } from '../../types';
 import { useApp } from '../../context/AppContext';
 
@@ -120,7 +120,7 @@ const ChannelGrid: React.FC<ChannelGridProps> = ({ channels, onChannelSelect }) 
       {filteredChannels.length === 0 && (
         <div className="text-center py-12">
           <div className="mx-auto h-16 w-16 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-4">
-            <Tv className="h-8 w-8 text-gray-400" />
+            <Monitor className="h-8 w-8 text-gray-400" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
             No channels found
